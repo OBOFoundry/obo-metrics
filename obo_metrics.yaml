@@ -1,0 +1,379 @@
+id: http://www.obofoundry.org/registry/metrics.yml
+name: metrics
+
+types:
+  mean:
+    base: float
+    uri: xsd:float
+  count:
+    base: int
+    uri: xsd:int
+  string:
+    base: str
+    uri: xsd:string
+  boolean:
+    base: boolean
+    uri: xsd:boolean
+
+classes:
+
+  metrics:
+    slots:
+        - abox_axiom_count
+        - abox_axiom_count_incl
+        - abox_nominals
+        - abox_nominals_incl
+        - annotation_property_count
+        - annotation_property_count_incl
+        - assert_n_subclass_avg
+        - assert_n_subclass_avg_incl
+        - assert_n_superclass_avg
+        - assert_n_superclass_avg_incl
+        - ax_complexrhs_count
+        - ax_complexrhs_count_incl
+        - axiom_count
+        - axiom_count_incl
+        - axiom_length_max
+        - axiom_length_max_incl
+        - axiom_type_count
+        - axiom_type_count_incl
+        - axiom_types
+        - axiom_types_incl
+        - certain_cycle
+        - certain_cycle_incl
+        - class_count
+        - class_count_incl
+        - class_sgl_subcl_count
+        - class_sgl_subcl_count_incl
+        - constructs
+        - constructs_incl
+        - dataproperty_count
+        - dataproperty_count_incl
+        - datatypes_axiom_count
+        - datatypes_axiom_count_incl
+        - datatypes_builtin
+        - datatypes_builtin_incl
+        - datatypes_count
+        - datatypes_count_incl
+        - datatypes_not_built_in
+        - datatypes_not_built_in_incl
+        - dt_builtin_count
+        - dt_builtin_count_incl
+        - dt_notbuiltin_count
+        - dt_notbuiltin_count_incl
+        - expressivity
+        - expressivity_incl
+        - gci_count
+        - gci_count_incl
+        - gci_hidden_count
+        - gci_hidden_count_incl
+        - individual_count
+        - individual_count_incl
+        - instance_per_class_avg
+        - instance_per_class_avg_incl
+        - logical_axiom_count
+        - logical_axiom_count_incl
+        - most_freq_concept
+        - most_freq_concept_incl
+        - multiple_inheritance_count
+        - multiple_inheritance_count_incl
+        - named_supercl_count_max
+        - named_supercl_count_max_incl
+        - namespace_axiom_count
+        - namespace_axiom_count_incl
+        - namespace_entity_count
+        - namespace_entity_count_incl
+        - obj_property_count
+        - obj_property_count_incl
+        - ontology_anno_count
+        - ontology_id
+        - owl2
+        - owl2_dl
+        - owl2_el
+        - owl2_ql
+        - owl2_rl
+        - owl2dl_profile_violation
+        - rbox_axiom_count
+        - rbox_axiom_count_incl
+        - rdfs
+        - rule_count
+        - rule_count_incl
+        - signature_entity_count
+        - signature_entity_count_incl
+        - syntax
+        - tautology_count
+        - tautology_count_incl
+        - tbox_axiom_count
+        - tbox_axiom_count_incl
+        - tbox_nominals
+        - tbox_nominals_incl
+        - tboxrbox_axiom_count
+        - tboxrbox_axiom_count_incl
+        - undecl_entity_count
+        - undecl_entity_count_incl
+        - valid_imports
+        - valid_imports_incl
+
+slots:
+  abox_axiom_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  abox_axiom_count_incl:
+    description: The number of ABox axioms in the ontology (including imports).
+    range: count
+  abox_nominals:
+    description: True, if the ABox contains nominal expressions (OWLObjectOneOf, OWLObjectHasValue), otherwise false.
+    range: boolean
+  abox_nominals_incl:
+    description: True, if the ABox contains nominal expressions (OWLObjectOneOf, OWLObjectHasValue), otherwise false (including imports).
+    range: boolean
+  annotation_property_count:
+    description: Number of distinct annotation properties used in the ontology.
+    range: count
+  annotation_property_count_incl:
+    description: Number of distinct annotation properties used in the ontology (including imports).
+    range: count
+  assert_n_subclass_avg:
+    description: Average number of subclasses per term in the ontology.
+    range: mean
+  assert_n_subclass_avg_incl:
+    description: Average number of subclasses per term in the ontology (including imports).
+    range: mean
+  assert_n_superclass_avg:
+    description: Average number of superclasses per term in the ontology.
+    range: mean
+  assert_n_superclass_avg_incl:
+    description: Average number of superclasses per term in the ontology (including imports).
+    range: mean
+  ax_complexrhs_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  ax_complexrhs_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  axiom_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  axiom_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  axiom_length_max:
+    description: The number of ABox axioms in the ontology.
+  axiom_length_max_incl:
+    description: The number of ABox axioms in the ontology.
+  axiom_type_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  axiom_type_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  axiom_types:
+    description: The number of ABox axioms in the ontology.
+  axiom_types_incl:
+    description: The number of ABox axioms in the ontology.
+  certain_cycle:
+    description: The number of ABox axioms in the ontology.
+  certain_cycle_incl:
+    description: The number of ABox axioms in the ontology.
+  class_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  class_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  class_sgl_subcl_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  class_sgl_subcl_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  constructs:
+    description: The number of ABox axioms in the ontology.
+  constructs_incl:
+    description: The number of ABox axioms in the ontology.
+  dataproperty_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  dataproperty_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  datatypes_axiom_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  datatypes_axiom_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  datatypes_builtin:
+    description: The number of ABox axioms in the ontology.
+  datatypes_builtin_incl:
+    description: The number of ABox axioms in the ontology.
+  datatypes_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  datatypes_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  datatypes_not_built_in:
+    description: The number of ABox axioms in the ontology.
+  datatypes_not_built_in_incl:
+    description: The number of ABox axioms in the ontology.
+  dt_builtin_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  dt_builtin_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  dt_notbuiltin_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  dt_notbuiltin_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  expressivity:
+    description: The number of ABox axioms in the ontology.
+  expressivity_incl:
+    description: The number of ABox axioms in the ontology.
+  gci_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  gci_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  gci_hidden_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  gci_hidden_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  individual_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  individual_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  instance_per_class_avg:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  instance_per_class_avg_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  logical_axiom_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  logical_axiom_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  most_freq_concept:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  most_freq_concept_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  multiple_inheritance_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  multiple_inheritance_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  named_supercl_count_max:
+    description: The number of ABox axioms in the ontology.
+    range: length
+  named_supercl_count_max_incl:
+    description: The number of ABox axioms in the ontology.
+    range: length
+  namespace_axiom_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  namespace_axiom_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  namespace_entity_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  namespace_entity_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  obj_property_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  obj_property_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  ontology_anno_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  ontology_id:
+    description: The number of ABox axioms in the ontology.
+    range: string
+  owl2:
+    description: The number of ABox axioms in the ontology.
+    range: string
+  owl2_dl:
+    description: The number of ABox axioms in the ontology.
+    range: string
+  owl2_el:
+    description: The number of ABox axioms in the ontology.
+    range: string
+  owl2_ql:
+    description: The number of ABox axioms in the ontology.
+    range: string
+  owl2_rl:
+    description: The number of ABox axioms in the ontology.
+    range: string
+  owl2dl_profile_violation:
+  rbox_axiom_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  rbox_axiom_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  rdfs:
+    description: The number of ABox axioms in the ontology.
+  rule_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  rule_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  signature_entity_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  signature_entity_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  syntax:
+    description: The number of ABox axioms in the ontology.
+  tautology_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  tautology_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  tbox_axiom_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  tbox_axiom_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  tbox_nominals:
+    description: True, if the TBox contains nominal expressions (OWLObjectOneOf, OWLObjectHasValue), otherwise false.
+    range: boolean
+  tbox_nominals_incl:
+    description: True, if the TBox contains nominal expressions (OWLObjectOneOf, OWLObjectHasValue), otherwise false (including imports).
+    range: boolean
+  tboxrbox_axiom_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  tboxrbox_axiom_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  undecl_entity_count:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  undecl_entity_count_incl:
+    description: The number of ABox axioms in the ontology.
+    range: count
+  valid_imports:
+    description: The number of ABox axioms in the ontology.
+  valid_imports_incl:
+    description: The number of ABox axioms in the ontology.
